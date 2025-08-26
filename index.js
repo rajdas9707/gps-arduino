@@ -14,6 +14,8 @@ app.use(express.json());
 
 // GET request example
 app.get("/", (req, res) => {
+  console.log('get request');
+  
   res.send("Hello! This is a GET request.");
 });
 
