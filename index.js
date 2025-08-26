@@ -26,6 +26,7 @@ app.post("/data", (req, res) => {
     message: "POST request received!",
     yourData: receivedData,
   });
+  console.log("req.body",req.body)
 });
 
 app.listen(PORT, () => {
