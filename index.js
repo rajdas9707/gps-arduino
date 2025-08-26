@@ -27,6 +27,4 @@ app.post("/data", (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server running at ${PORT}`);
-});
+module.exports = app
