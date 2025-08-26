@@ -17,6 +17,10 @@ app.get("/", (req, res) => {
   res.send("Hello! This is a GET request.");
 });
 
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello API" });
+});
+
 // POST request example
 app.post("/data", (req, res) => {
   const receivedData = req.body;
